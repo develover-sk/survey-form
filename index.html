@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="background-image">
+    </div>
+    <main class="content">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve this platform</p>
+        <form id="survey-form">
+            <div>
+                <label id="name-label" for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter you Name" required>
+            </div>
+            <div>
+                <label id="email-label" for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label id="number-label" for="number">Age</label><br>
+                <input type="number" id="number" name="number" min="10" max="100" placeholder="Enter your Age">
+            </div>
+            <div>
+                <label id="dropdown" for="dropdown">Which option best describe your current role?<br>
+            <select name="dropdown">
+            <option value="" selected disabled>-- Select a option --</option>
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Part Time Job">Part Time Job</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+            </select></label></div>
+            <div>
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <div><label for="definitely">
+            <input type="radio" name="radio" id="definitely" value="Definitely" checked="">Definitely
+            </label></div>
+                <div><label for="maybe">
+            <input type="radio" name="radio" id="maybe" value="Maybe">Maybe</label></div>
+                <div><label for="notsure">
+            <input type="radio" name="radio" id="notsure" value="Not sure">Not Sure</label></div>
+
+                <div>
+                    <p>What would you like to improve?</p>
+                    <div>
+                        <input type="checkbox" name="feprojects" id="feprojects" value="feprojects">
+                        <label for="feprojects">Front-End Projects</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="beprojects" id="beprojects" value="beprojects">
+                        <label for="beprojects">Back-End Projects</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="dvprojects" id="dvprojects" value="dvprojects">
+                        <label for="dvprojects">Data Visualisation</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="challenges" id="challenges" value="challenges">
+                        <label for="challenges">Challenges</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="forum" id="forum" value="forum">
+                        <label for="forum">Forum</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="addcourse" id="addcourse" value="addcourse">
+                        <label for="addcourse">Additional Courses</label>
+                    </div>
+
+                    <p>Any Comments or Suggestions?</p>
+                    <textarea></textarea>
+                    <div><button id="submit">Submit</button><button type="reset">Reset</button></div>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
