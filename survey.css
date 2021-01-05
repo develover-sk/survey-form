@@ -50,6 +50,11 @@ div {
     margin: 1px;
 }
 
+.footer{
+    text-align:center;
+    padding:2px;
+}
+
 #description {
     text-align: center;
     padding: 0;
